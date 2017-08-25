@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Qoute App</title>
+</head>
+<body>
+<h1>Randome Qoute Generator<h1>
+<p id="message"></p>
+<button id="generateQuote" onclick="genQ()">Generate a Quote</button>
+
+<script type="text/javascript">
+
+
+function genQ() {	
+
+var qouteMsg = document.getElementById('message')
+var quoteBtn = document.getElementById('generateQuote') 
+var randomQNum =  (Math.floor(Math.random() * 3) + 1);
+
+console.log(randomQNum);
+
+if(randomQNum === 1){
+	qouteMsg.innerHTML = "Hello";
+} else if (randomQNum === 2){
+	qouteMsg.innerHTML = "and";
+}else if (randomQNum === 3){
+	qouteMsg.innerHTML = "Good";
+}
+
+}
+
+
+</script>
+</body>
+</html>
